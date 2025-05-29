@@ -24,4 +24,4 @@ jobs:
           pip install selenium pandas
 
       - name: Rodar o script
-        run: python nome_do_arquivo.py
+        run: python cvm_bot.py
