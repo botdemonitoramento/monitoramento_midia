@@ -2,8 +2,8 @@ name: Monitoramento CVM
 
 on:
   schedule:
-    - cron: '0 20 * * *'   # 17:00 Brasília
-    - cron: '1 20 * * *'   # 17:01 Brasíliagit
+    - cron: '8 17 * * *'   # 17:00 Brasília
+    - cron: '9 17 * * *'   # 17:01 Brasíliagit
   workflow_dispatch:
 
 jobs:
@@ -24,4 +24,4 @@ jobs:
           pip install selenium pandas
 
       - name: Rodar o script
-        run: python cvm_bot.py
+        run: python cvm_botgit.py
