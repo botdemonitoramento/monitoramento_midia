@@ -2,8 +2,8 @@ name: Monitoramento CVM
 
 on:
   schedule:
-    - cron: '8 17 * * *'   # 17:00 Brasília
-    - cron: '9 17 * * *'   # 17:01 Brasíliagit
+    - cron: '14 20 * * *'  # 17:14 Brasília
+
   workflow_dispatch:
 
 jobs:
