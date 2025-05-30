@@ -24,4 +24,4 @@ jobs:
           pip install selenium pandas
 
       - name: Rodar o script
-        run: python cvm_botgit.py
+        run: python cvm_bot.py
