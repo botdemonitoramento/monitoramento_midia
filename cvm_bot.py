@@ -51,19 +51,7 @@ def LocalizaNews(palavra_chave):
     return df
 
 #teste
-palavra_de_busca = 'Tivio'
-texto = LocalizaNews(palavra_de_busca)
+palavra_de_busca = ['Tivio', 'xp', 'vinci', 'tarpon', 'bnp', 'oceana']
+texto = LocalizaNews(palavra_de_busca[1])
 
-#escreve email
-email = 'botdemonitoramento@gmail.com'
-senha_do_email = 'iapeijyauxvimtjo'
-msg = EmailMessage()
-msg['Subject'] = 'Teste de monitoramento notícias CVM'
-msg['From'] = 'botdemonitoramento@gmail.com'
-msg['To'] = 'arthur@ceres.org.br'
-msg.set_content(f"A gestora{palavra_de_busca} apareceu no portal de notícias da CVM.\n {texto}")
-
-#enviar email
-with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
-    smtp.login(email, senha_do_email)
-    smtp.send_message(msg)
+print(texto)

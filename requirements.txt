@@ -1,2 +1,6 @@
 beautifulsoup4==4.13.4
 requests==2.32.3
+pandas
+newspaper3k 
+openai
+google-generativeai
